@@ -18,3 +18,9 @@ variable "env" {
 variable "owner" {
   default = "Ben Miles"
 }
+variable "public_ca_key" {
+}
+variable "private_key" {
+}
+variable "public_signed_key" {
+}
