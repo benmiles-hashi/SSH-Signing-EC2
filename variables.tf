@@ -21,5 +21,9 @@ variable "owner" {
 variable "public_ca_key" {
   default = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJjXJ3gEcvg5zNqD9DwgnWUkfTWLV24d40PIR2CffCyw"
 }
-variable "private_key" {}
-variable "public_signed_key" {}
+variable "private_key" {
+  default = ""
+}
+variable "public_signed_key" {
+  default = ""
+}
