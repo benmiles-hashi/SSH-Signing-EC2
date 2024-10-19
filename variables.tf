@@ -25,3 +25,6 @@ variable "private_key" {
 }
 variable "public_signed_key" {
 }
+variable "snow-request-number" {
+  default = ""
+}
