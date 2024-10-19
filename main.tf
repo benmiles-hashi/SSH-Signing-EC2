@@ -28,3 +28,6 @@ resource "aws_key_pair" "deployer" {
   key_name   = "deployer-key-${random_id.id.hex}"
   public_key = var.public_ca_key
 }
+resource "random_id" "id" {
+	  byte_length = 8
+}
