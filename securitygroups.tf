@@ -2,12 +2,12 @@ data "aws_vpc" "main" {
   default = true
 }
 resource "aws_security_group" "allow_ssh" {
-  name        = "allow_ssh"
-  description = "Allow TLS inbound traffic and all outbound traffic"
+  name        = "allow_ssh_http-${random_id.id.hex}"
+  description = "Allow SSH and HTTP inbound traffic and all outbound traffic"
   vpc_id      = data.aws_vpc.main.id
 
   tags = {
-    Name = "allow_ssh"
+    Name = "allow_ssh_http"
   }
 }
 

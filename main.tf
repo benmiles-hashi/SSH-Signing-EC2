@@ -25,6 +25,6 @@ resource "aws_instance" "myec2" {
   }
 }
 resource "aws_key_pair" "deployer" {
-  key_name   = "deployer-key-bmiles"
+  key_name   = "deployer-key-${random_id.id.hex}"
   public_key = var.public_ca_key
 }
